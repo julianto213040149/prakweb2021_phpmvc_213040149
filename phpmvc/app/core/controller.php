@@ -1,9 +1,9 @@
 <?php
 
 class controller {
-    public function __construct()
+    public function view($view, $data = [])
     {
-        echo 'OK!';
+        require_once '../app/views' . $view . '.php';
     }
 }
 
